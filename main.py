@@ -1,5 +1,6 @@
-from typing import Union
 from fastapi import FastAPI
+from app.api.routers import article_router, user_router, auth_router
+from app.db.session import init_db
 
 app = FastAPI()
 
