@@ -17,6 +17,10 @@
 - ✔️ **SQLModel을 통한 데이터 모델링 최적화:** Pydantic과 SQLAlchemy의 장점을 결합한 SQLModel을 도입하여 데이터 정의 중복을 제거하고, 정적 타입 검사를 통해 런타임 에러를 최소화했습니다.
 - ✔️ **비동기 N+1 문제 해결:** Repository 계층에서 selectinload 전략을 통한 Eager Loading을 적용하여 관계 데이터 조회 시 발생하는 쿼리 폭증 문제를 해결하고 응답 지연 시간을 단축했습니다.
 
+## 아키텍처 경계 시각화
+
+![image](https://private-user-images.githubusercontent.com/78721108/566118006-4981a17b-90b7-49e2-934a-e56ba7ebc93c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzM5MDg0ODIsIm5iZiI6MTc3MzkwODE4MiwicGF0aCI6Ii83ODcyMTEwOC81NjYxMTgwMDYtNDk4MWExN2ItOTBiNy00OWUyLTkzNGEtZTU2YmE3ZWJjOTNjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzE5VDA4MTYyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5NmE0ZGQ3YWE1M2VmNzM5OWJmZDZkNDcwODFiZGQ0NGEyMjg0Y2VlODNkYWZjMjZlNTJlNzNlZDdiMTI4NjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.nbG8oxIX3zJOkRDGl9BpW_3WfBuUPQ4n8_c93DsyWc4)
+
 ## 결과와 배운 점
 기술적 화려함보다 중요한 것은 *'예측 가능한 시스템'* 을 구축하는 것임을 깨달았습니다. TDD를 통해 확보한 테스트 커버리지가 리팩토링의 심리적 안전 장치가 되어주었으며, 이는 결과적으로 더 과감한 성능 개선과 코드 간결화로 이어졌습니다. 앞으로도 무분별한 기술 도입보다는 문제의 본질을 파악하고 최적의 추상화 수준을 결정하는 실용주의적 개발자로 성장하겠습니다.
 
